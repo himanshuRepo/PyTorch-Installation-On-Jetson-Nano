@@ -1,16 +1,16 @@
 # Steps to Install Pytorch on Jetson Nano and Run YoloV5
 
 ## Identify the jetpack on jetson nano 
-> Refer: https://stackoverflow.com/questions/72359090/how-to-find-the-jetpack-version-of-nvidia-jetson-device
+> Referred: https://stackoverflow.com/questions/72359090/how-to-find-the-jetpack-version-of-nvidia-jetson-device
 ```
 sudo apt-cache show nvidia-jetpack
 ```
-- **_Note:_** Incase above step doesn't work, run following commands.
-```
-git clone https://github.com/jetsonhacks/jetsonUtilities.git
-cd jetsonUtilities
-python jetsonInfo.py
-```
+> - **_Note:_** Incase above step doesn't work, run following commands.
+> ```
+> git clone https://github.com/jetsonhacks/jetsonUtilities.git
+> cd jetsonUtilities
+> python jetsonInfo.py
+> ```
 ## Install torch
 > Referred:
 >
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 ```
 python3 detect.py
 ```
-> Note:
+> **_Note:_**
 >
 > a) If following error `ImportError: The _imagingft C module is not installed.` prompts, then reinstall pillow:
 > ```
